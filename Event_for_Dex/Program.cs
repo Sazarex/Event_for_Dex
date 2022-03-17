@@ -6,7 +6,7 @@ namespace Event_for_Dex
     {
         static void Main(string[] args)
         {
-            ///
+
             Person Valeriy = new Person("Валерий", 77711567, "Прага");
             AccountingSystem GoogleAccountSystem = new AccountingSystem();
             GoogleAccountSystem.AddToSource(Valeriy);
