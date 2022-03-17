@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event_for_Dex", "Event_for_Dex\Event_for_Dex.csproj", "{EB9EF0F9-BD6C-4EEC-9AB5-0FEF191823EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9EF0F9-BD6C-4EEC-9AB5-0FEF191823EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9EF0F9-BD6C-4EEC-9AB5-0FEF191823EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9EF0F9-BD6C-4EEC-9AB5-0FEF191823EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9EF0F9-BD6C-4EEC-9AB5-0FEF191823EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDE9B798-3919-47BC-9F53-E4DE65D68EB4}
+	EndGlobalSection
+EndGlobal
