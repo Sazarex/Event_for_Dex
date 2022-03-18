@@ -6,40 +6,35 @@ namespace Event_for_Dex
     {
         static void Main(string[] args)
         {
-            #region testingEvents no matter
-            //Console.WriteLine("Enter the message:");
-            //string mes = Console.ReadLine();
-
-            //MailManager DNKMailManager = new MailManager();
-            //Printer HP_LJ1012 = new Printer("Hewlett-Packard LaserJet 1012", DNKMailManager);
-            //TV LG = new TV("LG 202029", DNKMailManager);
-            //Sms sms = new Sms(DNKMailManager);
-            //DNKMailManager.SimultateSendingMail(mes);
-            //HP_LJ1012.Dispose();
-            //LG.Dispose();
-            //sms.Dispose();
-
-            #endregion
-
+            //Создаем класс с событием
             Person Valeriy = new Person("Валерий", 77711567, "Прага");
+            //Создаем класс-подписчик
             AccountingSystem GoogleAccountSystem = new AccountingSystem();
+            //Подписываемся на событие
             GoogleAccountSystem.AddToSource(Valeriy);
-
+            //Меняем значения свойств и смотрим на вызов событий.
             Valeriy.Name = "Владимир";
             Valeriy.PhoneNumber = 77521543;
             Valeriy.CityOfResidence = "Осло";
+            //Проверяем информацию об объекте
             Valeriy.GetInfo();
 
 
+            //Создаем ещё класс с событием
             Person Egor = new Person("Егор", 77712467, "Стамбул");
+            //Подписываемся на этот класс с событием
             GoogleAccountSystem.AddToSource(Egor);
+            //Меняем значение свойства имени и срабатывает событие
             Egor.Name = "Абдулла";
-
+            //Создаем другой класс с событием, который реализует интерфейс с этим событием
             Group VKMusic = new Group("ВК музыка");
+            //Подписываемся на событие
             GoogleAccountSystem.AddToSource(VKMusic);
+            //Изменяем свойства объекта и вызывается событие
             VKMusic.AddPost();
             VKMusic.Title = "Смешные приколы";
 
+            //Отписываемся у подписчика от всех объектов с событиями.
             GoogleAccountSystem.Dispose();
 
         }
